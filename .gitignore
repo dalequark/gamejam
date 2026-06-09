@@ -1,0 +1,14 @@
+# macOS
+.DS_Store
+
+# Agent/AI tools
+.agents/
+
+# Node
+node_modules/
+npm-debug.log*
+
+# Other common ignores
+.env
+dist/
+build/
