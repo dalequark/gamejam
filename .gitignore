@@ -2,7 +2,8 @@
 .DS_Store
 
 # Agent/AI tools
-.agents/
+.agents/*
+!.agents/skills/
 
 # Node
 node_modules/

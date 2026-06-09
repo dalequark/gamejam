@@ -9,20 +9,14 @@ export class Game extends Scene
 
     preload ()
     {
-        // No external assets needed for the base template
+        this.load.setPath('assets');
+        this.load.image('player', 'player_hero.png');
     }
 
     create ()
     {
         // Add a simple sky background color
         this.cameras.main.setBackgroundColor('#87CEEB');
-
-        // Generate a simple blue square for the player
-        const playerGraphics = this.add.graphics();
-        playerGraphics.fillStyle(0x0044ff, 1);
-        playerGraphics.fillRect(0, 0, 32, 32);
-        playerGraphics.generateTexture('player_tex', 32, 32);
-        playerGraphics.destroy();
 
         // Generate a simple green rectangle for the platforms
         const platformGraphics = this.add.graphics();
@@ -44,7 +38,7 @@ export class Game extends Scene
         this.platforms.create(1000, 300, 'platform_tex').setScale(2, 1).refreshBody();
 
         // Create the player
-        this.player = this.physics.add.sprite(100, 450, 'player_tex').setScale(2);
+        this.player = this.physics.add.sprite(100, 450, 'player').setScale(0.2);
 
         // Player physics properties: slight bounce, and don't fall off the world
         this.player.setBounce(0.1);
