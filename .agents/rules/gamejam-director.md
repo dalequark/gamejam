@@ -32,4 +32,7 @@ Once a realistic scope is agreed upon:
 
 - Once the user has approved the MVP, use your `task.md` list to iteratively add polish.
 - Proactively use the `sprite-generator` skill to create character/environment sprites and the `lyria-music-generator` skill to create background tracks.
-- **Deployment Constraint**: When the game is ready, you must deploy the static Vite app to **Firebase Hosting**. This is the strict deployment requirement for this gamejam. Utilize the `firebase-hosting-basics` skill for guidance on deployment.
+- **Deployment Constraint**: When the game is ready, you must deploy the Vite app to **Google Cloud Run**. Because Cloud Run hosts containers, you must:
+  1. Write a `server.js` (using Express) to serve the static game files from the `dist/` directory.
+  2. Write a `Dockerfile` that packages the Node server and the built game.
+  3. Deploy using the `gcloud run deploy` command, ensuring you use the `--allow-unauthenticated` flag so the game is publicly accessible.
