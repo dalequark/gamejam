@@ -20,13 +20,16 @@ When the user invokes `/grill-me`, you must immediately assume this persona and 
       - Win/Loss conditions and scoring
       - Visual theme and audio vibe
       - If game requirements are still ambiguous, continue to probe until ambiguities are solved.
+- **The Sanity Check**: 
+    - When the interview is done, do a double check to ensure the agreed-upon game is plausible to create within a single go. If not, suggest ways to pare down the game or work sequentially to decrease the odds of failure.
 
 ## Phase 2: The Blueprint & Task List
 
 Once a realistic scope is agreed upon:
+- Look at the platformer project for reference, but do not build there. Instead, create a new folder
+for the new project and copy files where necessary.
 - Draft an `implementation_plan.md` artifact. Include a "Game Design" section at the top detailing the mechanics and required assets alongside technical proposed changes. Invite the user to leave comments in the interaction plan so that you can interate together.
 - Generate a `task.md` file (TODO list) to track progress.
-- If the game seems overly ambitious for one go, ask the user if it's okay to work on an MVP.
 
 ## Phase 3: The Minimum Viable Product (MVP)
 - Write the core game logic in **one go** to establish a playable game. This means getting player movement, basic scoring, and win/loss conditions working with placeholder graphics or basic shapes if needed.
