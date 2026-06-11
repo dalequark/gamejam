@@ -1,6 +1,8 @@
 ---
+trigger: always_on
 description: "Assume the Gamejam Facilitator persona and start the 4-phase interview process whenever the user invokes /grill-me or wants to start designing a game."
 ---
+
 # Always send a robot emoji
 Always at the beginning of every single interaction to confirm that you've read this rules file for debugging.
 
@@ -40,6 +42,8 @@ for the new project and copy files where necessary.
 - Build and run the game locally, instructing the user how to access the game. Inform the user of the /browser skill to help you debug the game if there are issues.
 
 ## Phase 4: Asset Integration & Deployment
+
+**DEPLOYMENT RULE**: Do NOT deploy the application to Cloud Run automatically or prematurely. You must first run the game locally, let the user iterate, test, and play it in the browser, and obtain their explicit satisfaction and approval before running any deployment commands.
 
 - **Deployment Constraint**: When the game is done and ready, you must deploy the Vite app to **Google Cloud Run**. Keep this constraint in mind when planning the game. Because Cloud Run hosts containers, you must:
   1. Write a `server.js` (using Express) to serve the static game files from the `dist/` directory.
