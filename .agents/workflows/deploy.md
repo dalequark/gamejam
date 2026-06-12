@@ -70,6 +70,13 @@ dist
 
 *Note: Ensure you have completed the Qwiklabs Setup and Cloud Run MCP workflow before deploying.*
 
+If your active account is the `workstation-sa` or if you are not authenticated with your student credentials, you need to log in and set your project. Run the following commands (replace `<YOUR_PROJECT_ID>` with your actual Qwiklabs Project ID):
+
+```bash
+gcloud auth login
+gcloud config set project <YOUR_PROJECT_ID>
+```
+
 Run the following command to build and deploy your container to Google Cloud Run. You can replace `my-game` with your desired service name.
 
 ```bash
