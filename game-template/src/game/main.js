@@ -1,5 +1,6 @@
 import { Game as MainGame } from './scenes/Game';
 import { AUTO, Scale, Game } from 'phaser';
+import { CRTPipeline } from './shaders/CRTShader';
 
 // Find out more information about the Game Config at:
 // https://docs.phaser.io/api-documentation/typedef/types-core#gameconfig
@@ -15,7 +16,6 @@ const config = {
     physics: {
         default: 'arcade',
         arcade: {
-            gravity: { y: 600 },
             debug: false
         }
     },
@@ -33,6 +33,7 @@ const config = {
         mode: Scale.NONE,
         autoCenter: Scale.CENTER_BOTH
     },
+    pipeline: { CRTPipeline },
     scene: [MainGame]
 };
 

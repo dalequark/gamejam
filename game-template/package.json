@@ -19,9 +19,5 @@
         "build": "vite build --config vite/config.prod.mjs",
         "dev-nolog": "vite --config vite/config.dev.mjs",
         "build-nolog": "vite build --config vite/config.prod.mjs"
-    },
-    "devDependencies": {
-        "phaser": "^3.90.0",
-        "vite": "^8.0.16"
     }
 }

@@ -1,8 +1,15 @@
 import StartGame from './game/main';
 
 document.addEventListener('DOMContentLoaded', () => {
-    console.log('Booting game...');
-    StartGame('game-container');
+
+    // Wait for the retro font to load before booting the game to avoid fallback fonts
+    document.fonts.load('10px "Press Start 2P"').then(() => {
+        StartGame('game-container');
+    }).catch(err => {
+        console.error('Font failed to load:', err);
+        StartGame('game-container'); // Fallback
+    });
+
 });
 
 // Listen for screenshot requests from the parent window (for moderation)
