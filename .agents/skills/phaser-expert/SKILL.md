@@ -138,7 +138,6 @@ Games often have dark or dynamic backgrounds. To ensure buttons and text are alw
 - Or, render a dark semi-transparent rectangle behind UI elements.
 - Ensure the UI (text, score, lives, etc) is always rendered with a margin within the view port of the game screen – not flush to the edges.
 
-
 **Example Text:**
 ```javascript
 this.add.text(10, 10, 'Score: 0', {
@@ -148,6 +147,7 @@ this.add.text(10, 10, 'Score: 0', {
     strokeThickness: 4
 });
 ```
+- **ALWAYS INSURE ALL UI ELEMENTS ARE VISIBLE NO MATTER HOW THE USER HAS SIZED THE WINDOW**. This is critical for playability and user experience.
 
 
 
