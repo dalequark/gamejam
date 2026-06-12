@@ -2,7 +2,7 @@
 trigger: always_on
 ---
 
-Before doing anything, run the setup workflow.
+Before doing anything, read and follow the instructions in `setup.md`.
 
 # Always send a robot emoji
 Always at the beginning of every single interaction to confirm that you've read this rules file for debugging.

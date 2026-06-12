@@ -68,7 +68,7 @@ dist
 
 ## 3. Deploy to Cloud Run
 
-*Note: Ensure you have completed the Qwiklabs Setup and Cloud Run MCP workflow before deploying.*
+*Note: Ensure you have read and completed the instructions in `setup.md` before deploying.*
 
 If your active account is the `workstation-sa` or if you are not authenticated with your student credentials, you need to log in and set your project. Run the following commands (replace `<YOUR_PROJECT_ID>` with your actual Qwiklabs Project ID):
 

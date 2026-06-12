@@ -4,6 +4,8 @@ description: Set up your Qwiklabs environment.
 
 # Qwiklabs Environment Setup
 
+> **CRITICAL: This setup must be run immediately before you start building your game.**
+
 > **Note for Qwiklabs Users:** In Qwiklabs and restricted sandbox environments, the default workstation service account (`workstation-sa`) cannot make Cloud Run services public due to an organizational policy (`constraints/iam.allowedPolicyMemberDomains`). 
 
 To bypass this and deploy your game publicly later on, you must ensure you are locally authenticated with your allocated Qwiklabs student credentials rather than the default workstation account.
