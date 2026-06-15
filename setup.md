@@ -10,12 +10,17 @@ description: Set up your Qwiklabs environment.
 
 To bypass this and deploy your game publicly later on, you must ensure you are locally authenticated with your allocated Qwiklabs student credentials rather than the default workstation account.
 
+Run this command: 
+```bash
+gcloud auth login
+```
+
 Run the following command to check your active account:
 ```bash
 gcloud auth list
 ```
 
-If your active account is the `workstation-sa` or if you are not authenticated with your student credentials, you need to log in and set your project. Run the following commands (replace `<YOUR_PROJECT_ID>` with your actual Qwiklabs Project ID):
+If your active account is the `workstation-sa` or if you are not authenticated with your student credentials (your account will start with student), you need to log in and set your project. Run the following commands (replace `<YOUR_PROJECT_ID>` with your actual Qwiklabs Project ID):
 
 ```bash
 gcloud auth login
